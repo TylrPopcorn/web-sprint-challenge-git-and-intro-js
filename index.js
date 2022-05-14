@@ -280,7 +280,7 @@ function removeArtist(arr,numb) {
 
   for (let i = 0; i<copy_of_ARRAY.length; i++){
     if (copy_of_ARRAY[i].id == numb) {
-      copy_of_ARRAY.splice(numb, 0);
+      copy_of_ARRAY.splice(numb, 1);
     }
   }
 
@@ -363,7 +363,7 @@ function artistInfo(array, name){
       let namE = array[i].name;
 
       if (namE == name){
-        return array[i];
+        return array[i].bio;
       }
     }
   }
